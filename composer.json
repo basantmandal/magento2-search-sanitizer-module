@@ -1,0 +1,64 @@
+{
+  "name": "hk2/search-sanitizer",
+  "description": "Sanitizes Magento storefront search queries by removing suspicious SQL-related keywords and characters.",
+  "type": "magento2-module",
+  "license": "OSL-3.0",
+  "version": "1.0.0",
+  "prefer-stable": true,
+  "require": {
+    "hk2/core": "^1.0",
+    "magento/framework": "^103.0.0",
+    "php": "^8.1 || ^8.2 || ^8.3 || ^8.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "HK2\\SearchSanitizer\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Basant Mandal",
+      "email": "support@basantmandal.in",
+      "homepage": "https://www.basantmandal.in"
+    }
+  ],
+  "support": {
+    "email": "support@basantmandal.in",
+    "homepage": "https://www.basantmandal.in"
+  },
+  "keywords": [
+    "basant",
+    "basantmandal",
+    "extension",
+    "hk2",
+    "magento-module",
+    "magento2",
+    "magento2-extension",
+    "sanitize",
+    "sanitize search",
+    "search",
+    "search security",
+    "security"
+  ],
+  "archive": {
+    "exclude": [
+      "./ai",
+      "/.github",
+      "/.gitignore",
+      "/.releaserc.json",
+      "/build",
+      "/composer.lock",
+      "/node_modules",
+      "/package-lock.json",
+      "/package.json",
+      "/phpcs.xml",
+      "/tests",
+      "AGENT.md",
+      "CLAUDE.md",
+      "GEMENI.md"
+    ]
+  }
+}

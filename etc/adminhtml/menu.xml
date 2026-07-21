@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="HK2_SearchSanitizer::settings"
+             title="Search Sanitizer"
+             module="HK2_SearchSanitizer"
+             sortOrder="42"
+             action="adminhtml/system_config/edit/section/hk2_searchsanitizer_section1"
+             resource="HK2_SearchSanitizer::core_config"
+             parent="HK2::root"/>
+    </menu>
+</config>

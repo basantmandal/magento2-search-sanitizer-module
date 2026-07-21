@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="hk2_searchsanitizer_section1" showInDefault="1" showInWebsite="1"
+            showInStore="1"
+            sortOrder="2" translate="label">
+            <label><![CDATA[Search Sanitizer]]></label>
+            <tab>hk2_options_tab</tab>
+            <resource>HK2_SearchSanitizer::core_config</resource>
+
+            <!-- Module Information Header -->
+            <group id="hk2_searchsanitizer_module_info" showInDefault="1" showInWebsite="0"
+                showInStore="0" sortOrder="0"
+                translate="label">
+                <label><![CDATA[About HK2 Extensions]]></label>
+
+                <field id="hk2_searchsanitizer_module_header" type="note" sortOrder="0"
+                    showInDefault="1"
+                    showInWebsite="0" showInStore="0">
+                    <frontend_model>HK2\Core\Block\Adminhtml\System\Config\ModuleHeader</frontend_model>
+                </field>
+            </group>
+
+            <group id="general" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10"
+                translate="label">
+                <label><![CDATA[General]]></label>
+
+                <field id="enabled" translate="label comment" type="select" sortOrder="10"
+                    showInDefault="1"
+                    showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Enable Search Sanitization]]></label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[Enable or disable storefront search query sanitization.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -10,7 +10,7 @@
 
 The HK2 Search Sanitizer module sanitizes storefront search queries by removing potentially harmful SQL-related keywords and special characters before they are processed by Magento's search engine. This helps reduce the impact of malformed or suspicious search input while preserving normal search functionality.
 
-Potentially suspicious SQL-related keywords and characters (such as `select`,`insert`, `update`, `delete`, `drop`, `union`, `exec`, `truncate` etc.) are removed from storefront search queries. Itintercepts search requests before they are processed by the query factory, ensuring that malicious strings do not affect
+Potentially suspicious SQL-related keywords and characters (such as `select`,`insert`, `update`, `delete`, `drop`, `union`, `exec`, `truncate` etc.) are removed from storefront search queries. It intercepts search requests before they are processed by the query factory, ensuring that malicious strings do not affect
 the database or application stability.
 
 ## 🎯 Use Cases
@@ -102,8 +102,8 @@ Reference: [docs/compatibility.md](docs/compatibility.md)
 
 | Platform                  | Supported |
 |---------------------------|-----------|
-| Magento Open Source 2.4.x | ✅         |
-| Adobe Commerce 2.4.x      | ✅         |
+| Magento Open Source 2.4.x | ✅        |
+| Adobe Commerce 2.4.x      | ✅        |
 
 ## 🛠 Troubleshooting
 
